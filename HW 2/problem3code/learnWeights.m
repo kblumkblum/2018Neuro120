@@ -2,7 +2,7 @@ function weights = learnWeights(imgData)
 % learns the weights by maximizing the kurtosis
     weights = [0;0;0];
     for i =1:3
-        wCurr =  gradDescent( imgData, weights)
+        wCurr =  gradDescent( imgData, weights);
         weights(:,i) = wCurr;
     end
 
